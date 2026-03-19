@@ -1,7 +1,7 @@
 const fs = require('fs');
 const content = fs.readFileSync('/Users/akshuvo/Desktop/WorkDir/csv-xlxs-split/csv-split/demo.html', 'utf8');
 
-const regex = /tcbros\.com\/cdn\/shop\/files\/[^"\s'<>]+?\.(?:png|jpg|jpeg|gif|webp|svg)(?:\?v=\d+)?/g;
+const regex = /domain\.com\/cdn\/shop\/files\/[^"\s'<>]+?\.(?:png|jpg|jpeg|gif|webp|svg)(?:\?v=\d+)?/g;
 const matches = content.match(regex);
 
 if (!matches) {
